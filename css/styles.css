@@ -1,0 +1,599 @@
+:root{
+    --color-primary:white;
+    --color-menu:rgb(19, 2, 2);
+
+
+    --color-hover:rgb(255, 174, 0);
+    --background-image:url('../images/back4.avif');
+    --menu-background:url('../images/back6.jpeg');
+    --box-shadow:0 4px 10px rgba(255, 255, 255, 0.5),0 -4px 10px rgba(255, 255, 255, 0.5);
+    
+
+}
+.light-mode{
+    --color-primary:black;
+    --color-menu:white;
+    --color-hover:rgb(90, 63, 6);
+    --background-image:url('../images/white2.avif');
+    --menu-background:url('../images/white6.jpg');
+    --box-shadow:0px 0px 20px 10px rgba(0,0,0,0.74);
+
+    
+}
+
+body{
+    
+background-image:var(--background-image) ;
+background-size: cover; /* or contain */
+    background-position: center;  /* adjust as needed */
+    background-repeat: no-repeat;  /* prevents tiling */
+    height: 110vh;
+   
+}
+.logo{
+    position: absolute;
+    top:10px;
+   
+}
+.logo img{
+    width:120px;
+    height:120px;
+    border: 2px solid var(--color-primary);
+   
+    border-radius: 50%;
+    
+
+}
+.quote h1{
+    color: var(--color-primary);
+    font-size: 52px;
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 2px;
+    position: absolute;
+    top:40%;
+    left:10%;
+}
+.home-buttons{
+    position: absolute;
+    right:10%;
+}
+.home-buttons a{
+    width:120px;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px;
+    color:var(--color-primary);
+    font-family: "Spicy Rice", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.home-buttons a:hover{
+    color:var(--color-hover);
+}
+.change-design{
+    position: absolute;
+    right:2%;
+    display: inline;
+   
+}
+.change-design button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.cafe-name{
+    position: absolute;
+    top:20px;
+    left:160px;
+    color:var(--color-primary);
+
+    
+}
+.cafe-name h1{
+    font-family: "Spicy Rice", serif ;
+    text-transform: capitalize;
+}
+#menu{
+    position: absolute;
+    top:1030px;
+    color:var(--color-primary);
+    background-color: var(--color-menu);
+    background-position: center;  /* adjust as needed */
+    background-repeat: no-repeat;  /* prevents tiling */
+    height: 500vh;
+    width: 100%;
+  
+
+}
+.menu{
+    width:100%;
+    height:200px;
+    background-color: rgb(104, 77, 28);
+}
+.menu p{
+   
+   text-align: center;
+    font-family: "Dancing Script", cursive ;
+    font-size: 27px;
+    color: white;
+    letter-spacing: 2px;
+    top:-10px;
+    
+    
+}
+.menu span{
+    color:rgb(250, 199, 102);
+}
+.menu img{
+    background-color: rgb(104, 77, 28);
+    width: 100px;
+    position: relative;
+    top:-130px;
+    left:350px
+}
+#menu h1{
+    
+    position:relative;
+    top:30px;
+    font-family:"Spicy Rice", serif ;
+    letter-spacing: 2px;
+    font-size: 42px;
+    
+    text-transform: capitalize;
+    text-align: center;
+    color:black;
+}
+.left{
+    position: relative;
+    left:850px !important;
+    top: -95px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.container .single-item{
+    
+    margin:10px;
+    margin-left: 40px;
+
+    
+}
+.container .single-item img{
+    width:300px;
+    height:300px;
+    align-items: center;
+    border: 2px solid ;
+   background-color:white ;
+    border-radius: 40px;
+    border-color: white;
+}
+.container .single-item p{
+    font-family:"Spicy Rice", serif ;
+    position: relative;
+    top:-10px;
+    left:100px;
+}
+.container .single-item button{
+    background-color: #5f4307;
+    position: relative;
+    top:-20px;
+    left: 90px;
+    font-style:"Spicy Rice", serif ;
+    text-transform: capitalize;
+    border-radius: 30px;
+    border-color: transparent;
+    width: 120px;
+    height:50px ;
+    box-shadow: 4px 4px 10px rgba(218, 196, 181, 0.5);
+    color: azure;
+
+}
+.container .single-item button:hover{
+    background-color: #382402;
+    color: white;
+    transition: .5s ease-in-out;
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.74);
+}
+.container .single-item span{
+    color: rgb(229, 144, 52);
+
+}
+.container .single-item span:hover{
+    color: rgb(104, 77, 28);
+}
+/* about us page styling */
+#about{
+    position: absolute;
+    top:3040px;
+
+}
+.about .about-us{
+    
+    margin:5px;
+    width:100%;
+    height:200px;
+    background-color: rgb(104, 77, 28);
+}
+.about .about-us h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Spicy Rice", serif;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 400;
+    position: relative;
+    top:30px;
+
+}
+.about .about-us p{
+    font-family: "Dancing Script", cursive ;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+/* .about .about-us .first-about{
+    /* display: flex; */
+    /* float: right; */
+
+ .text{
+    text-align: center;
+    background-color: rgb(243, 238, 229);
+    width:35% ;
+    height:400px;
+    box-shadow: var(--box-shadow);
+                
+    position: relative;
+    top:-160px;
+    left:50px;
+}
+.text img{
+    width:100%;
+    height: 300px;
+}
+#left-text{
+    text-align: center;
+    background-color: rgb(243, 238, 229);
+    width:35% ;
+    height:400px;
+    box-shadow:var(--box-shadow);
+    position: relative;
+    top:-580px;
+    left:900px;
+    
+    
+    
+
+}
+#left-text img{
+    width:100%;
+    height: 300px;  
+}
+#left-text p{
+    font-family: "Dancing Script", cursive ;
+    text-align: center;
+    font-size: 20px;
+    color:rgb(29, 18, 18);
+    letter-spacing: 3px;
+    line-height: 40px;
+    font-weight: 900; 
+}
+.text p{
+  font-family: "Dancing Script", cursive ;
+  text-align: center;
+  font-size: 20px;
+  color:rgb(29, 18, 18);
+  letter-spacing: 3px;
+  line-height: 40px;
+  font-weight: 900;
+}
+.logo-about img{
+
+    width:220px;
+    height:220px;
+    border: 2px solid var(--color-primary);
+   
+    border-radius: 50%;
+    position: relative;
+    top:180px;
+    left: 600px;
+    
+}
+.stats{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    top: -400px;
+    left: 270px;
+    background-color: var(--color-menu);
+    width:1000px;
+    
+    
+}
+
+.single-stat{
+    width: 60%;
+    height: 130px;
+    background-color:rgb(210, 200, 180);
+    box-shadow:0px 0px 20px 10px rgba(0,0,0,0.74) ;
+   
+    color: white;
+    border-radius: 30px;
+    
+
+}
+.single-stat p{
+    font-family:"Dancing Script", cursive; 
+    text-align: center;
+    font-size: 25px;
+    color:black;
+    
+}
+.single-stat span{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    left: 30%;
+    color: rgb(99, 76, 3);
+}
+.single-stat:hover{
+    box-shadow:0px 0px 20px 10px rgba(0,0,0,0.74) ;
+    cursor: pointer;
+}
+#contact{
+    position: absolute;
+    top:4100px;
+
+}
+.contact-info{
+    width:170vh;
+    background-color: rgb(104, 77, 28);
+    height: 150px;
+}
+.contact-title h1{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 42px;
+    font-family: "Spicy Rice", serif;
+    letter-spacing: 2px;
+}
+.contact-title p{
+    font-family: "Dancing Script", cursive;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 32px;
+}
+iframe{
+    width:25%;
+    height: 300px;
+    margin: 30px;
+    border-radius:20px ;
+}
+.contact-us p{
+    font-family:"Spicy Rice", serif ;
+    color: var(--color-primary);
+    
+    margin: 10px;
+    font-size: 22px;
+}
+.contact-icon i{
+    
+    align-items: center;
+    color: rgb(104, 77, 28);
+    
+    cursor: pointer;
+    justify-content: center;
+    
+    border-radius: 50%;
+    margin: 0 0.4rem;
+    transition: all 0.4s ease-in-out;
+    font-size: 40px;
+    background-color: var(--color-menu);
+    width:55px;
+    height:55px;
+    text-align: center;
+    margin-top: 10px;
+ padding: 5px;
+
+}
+.form{
+    position: relative;
+    top:-400px;
+    left:600px;
+}
+.contact-icon i:hover{
+    
+    color:var(--color-primary);
+
+}
+.form label{
+    font-size: larger;
+    font-family:"Dancing Script", cursive ;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+.form input{
+    background-color: #5f4307;
+    border-radius:30px;
+    width: 420px;
+    height:50px;
+    padding-left: 10px;
+    color: var(--color-menu);
+}
+.form textarea{
+    background-color: #5f4307;
+    border-radius:30px;
+    width: 400px;
+    height:80px;
+    position: relative;
+    top: 30px;
+}
+.form label:last-child{
+    margin:1.6rem;
+    position: relative;
+    top:-30px;
+}
+.submit{
+   margin: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow:  0px 0px 20px 10px rgba(0,0,0,0.74);
+    position: relative;
+    top: 100px;
+    left:-150px;
+    text-align: center;
+    font-family:"Spicy Rice", serif  ;
+
+}
+.img-contact img{
+    width: 20%;
+    position: relative;
+    top:-700px;
+    left:1150px;
+    
+    background-color: var(--color-menu);
+   
+}
+.submit:hover{
+    background-color:rgb(104, 77, 28) ;
+    color: white;
+}
+.contact-title i{
+    width: 40px;
+    height: 40px;
+    background-color: #4d3903;
+    color: white;
+    position: relative;
+    top:-130px;
+    left: 1300px;
+    font-size: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px rgba(90, 63, 0, 0.74);
+    padding: 15px;
+
+}
+.menu-up i{
+    
+    background-color: #4d3903;
+    width: 50px;
+    height: 50px;
+    color: white;
+    position: relative;
+    top:150px;
+    left: 1350px;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 10px rgba(90, 63, 0, 0.74);
+    
+}
+/* for the pop out kinda thing */
+.popup {
+    position: fixed;
+    top: 200px;
+    left: 300px;
+    bottom: 200px;
+    width: 60%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    /* background: white; */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+}
+#menu #popup-details p{
+    color:white;
+    z-index: 1000;
+}
+#popup-image{
+    width: 320px;
+    height:320px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(52, 50, 50);
+    position:relative;
+    
+    width:100%;
+    height: 200px;
+    margin:0;
+    padding: 0;
+    bottom: 0;
+    left:0;
+    top:5382px;
+  
+   
+
+}
+footer .footer-container p{
+    font-family:  "Dancing Script", cursive;
+    font-size: 30px;
+    font-weight: 900;
+    position: relative;
+    top:70px;
+    left:400px;
+    color: white;
+}
+
+footer .footer-container .logo-footer img{
+    width:150px;
+    height:150px;
+    border-color:white;
+    border-radius:50%;
+    position: relative;
+    top:-60px;
+    left:200px;
+}
+footer .footer-container .icons-footer i{
+    font-size:40px;
+    position:relative;
+    top:-180px;
+    left:700px;
+    color:white;
+    margin: 30px;
+
+}
+#responseMessage{
+    color: white;
+    background-color: red;
+    font-size: 20px;
+}
